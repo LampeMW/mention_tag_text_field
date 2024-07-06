@@ -20,9 +20,10 @@ class MentionTagTextEditingController extends TextEditingController {
     if (_indexMentionEnd == null) return;
     if (_cursorPosition - _indexMentionEnd! == 1) {
       onChanged(super.text);
-    } else if (_cursorPosition - _indexMentionEnd! != 1) {
-      _updateOnMention(null);
     }
+    //  else if (_cursorPosition - _indexMentionEnd! != 1) {
+    //   _updateOnMention(null);
+    // }
   }
 
   late int _cursorPosition;
